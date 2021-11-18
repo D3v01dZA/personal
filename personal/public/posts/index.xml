@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Christopher Altona</title>
-    <link>https://caltona.net/</link>
-    <description>Recent content on Christopher Altona</description>
+    <title>Posts on Christopher Altona</title>
+    <link>https://caltona.net/posts/</link>
+    <description>Recent content in Posts on Christopher Altona</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Nov 2021 03:32:29 +0000</lastBuildDate><atom:link href="https://caltona.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Nov 2021 03:32:29 +0000</lastBuildDate><atom:link href="https://caltona.net/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
       <link>https://caltona.net/posts/hello-world/</link>

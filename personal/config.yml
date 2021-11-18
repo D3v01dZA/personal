@@ -1,4 +1,16 @@
-baseURL: "http://example.org/"
+baseURL: "https://caltona.net/"
 languageCode: "en-us"
 title: "Christopher Altona"
 theme: "PaperMod"
+
+params:
+  homeInfoParams:
+      Title: Hi
+      Content: Welcome to my personal website
+  socialIcons:
+    - name: "GitHub"
+      url: "https://github.com/D3v01dZA"
+    - name: "RSS"
+      url: "/index.xml"
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
