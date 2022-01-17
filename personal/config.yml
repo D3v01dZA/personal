@@ -4,9 +4,14 @@ title: "Christopher Altona"
 theme: "PaperMod"
 
 params:
-  homeInfoParams:
-      Title: Hi
-      Content: Welcome to my personal website
+  profileMode:
+    enabled: true
+    subtitle: "My personal website"
+    buttons:
+      - name: "Posts"
+        url: "/posts/"
+      - name: "CV"
+        url: "/cv/"
   socialIcons:
     - name: "GitHub"
       url: "https://github.com/D3v01dZA"
@@ -14,3 +19,14 @@ params:
       url: "/index.xml"
   ShowReadingTime: true
   ShowCodeCopyButtons: true
+
+menu:
+  main:
+    - identifier: Posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: CV
+      name: CV
+      url: /cv/
+      weight: 20
