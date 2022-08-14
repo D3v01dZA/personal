@@ -1,4 +1,4 @@
-FROM ubuntu:21.10
+FROM ubuntu:22.04
 
 # Setup user
 ARG USERNAME=vscode
@@ -23,16 +23,18 @@ RUN mkdir -p /src
 WORKDIR /src
 
 # Install Go
-RUN wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
-RUN tar -C /usr/local/ -xzf go1.18.linux-amd64.tar.gz
+RUN wget https://go.dev/dl/go1.11.linux-amd64.tar.gz
+RUN tar -C /usr/local/ -xzf go1.11.linux-amd64.tar.gz
 ENV PATH=${PATH}:/usr/local/go/bin:/home/${USERNAME}/go/bin
 
 # Install Hugo
-RUN git clone https://github.com/gohugoio/hugo.git
-WORKDIR /src/hugo
-USER ${USERNAME}
-RUN go install
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_0.101.0_Linux-64bit.tar.gz
+RUN tar -C /bin -xzf hugo_0.101.0_Linux-64bit.tar.gz
+RUN chmod +x /bin/hugo
 USER root
 
 # Create the workspace
 RUN mkdir -p /workspace
+RUN chown -R ${USER_UID} /workspace
+RUN chgrp -R ${USER_GID} /workspace
+USER ${USERNAME}
